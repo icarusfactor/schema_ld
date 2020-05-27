@@ -6,7 +6,7 @@
 Plugin Name: Schmea LD Plugin
 Plugin URI: http://userspace.org
 Description: Ths plugin will let you easily add blocks of formated Google schmea json-ld definitions
-Version: 1.0.0
+Version: 1.1.0
 Author: Daniel Yount aka "icarus factor"
 Author URI: http://userspace.org
 License: GPLv2 or later
@@ -59,9 +59,7 @@ if ( !class_exists( 'SchmealdPlugin' ) ) {
 
                 function sld_enqueue() {
 
-                //wp_enqueue_script( 'sldbootcss', plugin_dir_url(__FILE__) . 'assets/jquery.min.js' );
                 wp_enqueue_style('sldbootcss','https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
-                //wp_enqueue_script( 'sldjquery','https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js');
                 wp_enqueue_script( 'sldpopper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js');
                 wp_enqueue_script( 'sldboot','https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js');
 

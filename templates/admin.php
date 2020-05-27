@@ -1,7 +1,7 @@
-<link rel="stylesheet" type="text/css" href="/wp-content/plugins/schema_ld/assets/view.css" media="all">
-<script type="text/javascript" src="/wp-content/plugins/schema_ld/assets/view.js"></script>
-<script type="text/javascript" src="/wp-content/plugins/schema_ld/assets/tabs.js"></script>
-<link rel="stylesheet" type="text/css" href="/wp-content/plugins/schema_ld/assets/tabs.css">
+<link rel="stylesheet" type="text/css" href=""<?php echo plugins_url(); ?>/schema_ld/assets/view.css" media="all">
+<script type="text/javascript" src=""<?php echo plugins_url(); ?>/schema_ld/assets/view.js"></script>
+<script type="text/javascript" src=""<?php echo plugins_url(); ?>/schema_ld/assets/tabs.js"></script>
+<link rel="stylesheet" type="text/css" href=""<?php echo plugins_url(); ?>/schema_ld/assets/tabs.css">
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'BLOGCONFIG')">BLOG SCHEMA CONFIG</button>
@@ -35,7 +35,7 @@
 
 <div id="ABOUTINFO" class="tabcontent">
 <h3>Schema LD Plugin</h3>
-<img width="350" height="350" src="/wp-content/plugins/schema_ld/assets/schema_ld_logo.png" />
+<img width="350" height="350" src="<?php echo plugins_url(); ?>/schema_ld/assets/schema_ld_logo.png" />
 
 <pre>
 Designed to help facialite json-ld entries
