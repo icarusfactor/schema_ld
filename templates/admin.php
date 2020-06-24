@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href=""<?php echo plugins_url(); ?>/schema_ld/assets/view.css" media="all">
-<script type="text/javascript" src=""<?php echo plugins_url(); ?>/schema_ld/assets/view.js"></script>
-<script type="text/javascript" src=""<?php echo plugins_url(); ?>/schema_ld/assets/tabs.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo plugins_url(); ?>/schema_ld/assets/view.css" media="all">
+<script type="text/javascript" src="<?php echo plugins_url(); ?>/schema_ld/assets/view.js"></script>
+<script type="text/javascript" src="<?php echo plugins_url(); ?>/schema_ld/assets/tabs.js"></script>
 <link rel="stylesheet" type="text/css" href=""<?php echo plugins_url(); ?>/schema_ld/assets/tabs.css">
 
 <div class="tab">
@@ -207,8 +207,12 @@ Author: Will not be autofilled and author will use their own name.
   var input_publogow = document.getElementById("element_5"); 
   var input_publogoh = document.getElementById("element_6"); 
 
-  var schema_ldObj = JSON.parse( '<?php echo get_option('schema_ld_configs' ); ?>' );
-
+  try {
+      var schema_ldObj = JSON.parse( '<?php echo get_option('schema_ld_configs' ); ?>' );
+      }
+  catch(err) {
+      var schema_ldObj = "";
+      }
  
   input_genre.value = schema_ldObj.domain; 
   input_keyword.value = schema_ldObj.domain_keywords; 

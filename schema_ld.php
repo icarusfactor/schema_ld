@@ -6,7 +6,7 @@
 Plugin Name: Schmea LD Plugin
 Plugin URI: http://userspace.org
 Description: Ths plugin will let you easily add blocks of formated Google schmea json-ld definitions
-Version: 1.1.0
+Version: 1.2.0
 Author: Daniel Yount aka "icarus factor"
 Author URI: http://userspace.org
 License: GPLv2 or later
